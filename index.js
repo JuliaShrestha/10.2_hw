@@ -4,12 +4,6 @@
 
 const array = [1, 2, 5, 8, 10, 13, 14, 17, 23];
 
-const newArrayOfEvenNumbers = [];
-
-for(let number of array) {
-    if(number % 2 === 0) {
-        newArrayOfEvenNumbers.push(number);
-    }
-}
+const newArrayOfEvenNumbers = array.filter(number => number % 2 === 0);
 
 console.log(newArrayOfEvenNumbers);
